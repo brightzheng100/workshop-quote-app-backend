@@ -1,0 +1,2 @@
+project-name: workshop-quote-app-backend
+stack: kabanero/java-spring-boot2:0.3
