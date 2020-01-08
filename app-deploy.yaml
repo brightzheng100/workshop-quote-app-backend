@@ -5,10 +5,18 @@ metadata:
     architecture: x86_64
     authoritative-source-url: registry.access.redhat.com
     build-date: 2019-10-29T16:44:53.794580
+    commit.image.appsody.dev/author: Bright Zheng <zhengxianquan@hotmail.com>
+    commit.image.appsody.dev/committer: Bright Zheng <zhengxianquan@hotmail.com>
+    commit.image.appsody.dev/date: Tue Jan 7 16:14:22 2020 +0800
+    commit.image.appsody.dev/message: initial commit
     description: This image contains the Kabanero development stack for the java-spring-boot2
       collection
     distribution-scope: public
-    image.opencontainers.org/created: "2020-01-06T15:48:07+08:00"
+    image.opencontainers.org/created: "2020-01-08T11:28:18+08:00"
+    image.opencontainers.org/documentation: https://github.com/brightzheng100/workshop-quote-app-backend
+    image.opencontainers.org/revision: 92043589813f00d026f3300de4e27811de0e35a1-modified
+    image.opencontainers.org/source: https://github.com/brightzheng100/workshop-quote-app-backend/tree/master
+    image.opencontainers.org/url: https://github.com/brightzheng100/workshop-quote-app-backend
     k8s.io/description: The Universal Base Image is designed and engineered to be
       the base layer for all of your containerized applications, middleware and utilities.
       This base image is freely redistributable, but Red Hat only supports Red Hat
@@ -38,9 +46,9 @@ metadata:
     image.opencontainers.org/title: workshop-quote-app-backend
     stack.appsody.dev/version: 0.3.18
   name: workshop-quote-app-backend
+  namespace: default
 spec:
-  applicationImage: registry:5000/workshop-quote-app-backend:latest
-  imagePullPolicy: Always
+  applicationImage: registry:5000/workshop-quote-app-backend:v0.1.0
   createKnativeService: false
   expose: true
   livenessProbe:
